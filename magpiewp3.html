@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <title>MagPie</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link rel="stylesheet" href="magpiestyle.css">
+                <link rel="script" href="magpiescrpt.js">
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+                    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.2.min.js"></script>
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        </head>
+            <body>
+                           <!--navbar with the magpi logo-->
+                  <nav class="navbar  navbar-default">
+                      <img src="productphotographymagpiedesigns/Asset 7.png" width="150"/>
+                      <ul>
+                         <li><a>HOME</a></li>
+                         <li><a>ABOUT</a></li>
+                         <li><a>STORE</a></li>
+                         <li><a>CONTACT</a></li>
+                      </ul>
+                  </nav>
+
+                           <!--carousel slideshow-->
+
+                           <div class="container">
+                                      <!--<div id="myCarousel" class="carousel slide">-->
+                                      <div id="mycarou" class="carousld">
+
+
+                                                <div class="container" id="smallcon">
+                                                    <!-- Wrapper for slides -->
+                                                    <!--<div class="carousel-inner">-->
+                                                    <div class="container" id="smallcon2">
+
+                                                        <img name="slide" width="460" height="345">
+
+
+                                                                  <!--<div class="item">-->
+                                                                    <!--<img src="productphotographymagpiedesigns/IMG-9565 2.jpg" alt="Chania" width="460" height="345">-->
+                                                                  <!--</div>-->
+
+                                                                  <!--<div class="item">-->
+                                                                    <!--<img src="productphotographymagpiedesigns/IMG-9565 2.jpg" alt="Chania" width="460" height="345">-->
+                                                                  <!--</div>-->
+
+                                                                  <!--<div class="item">-->
+                                                                    <!--<img src="productphotographymagpiedesigns/IMG-9565 2.jpg" alt="Flower" width="460" height="345">-->
+                                                                  <!--</div>-->
+
+                                                                  <!--<div class="item">-->
+                                                                    <!--<img src="productphotographymagpiedesigns/IMG-9565 2.jpg" alt="Flower" width="460" height="345">-->
+                                                                  <!--</div>-->
+
+                                                    </div>
+                                                </div>
+
+                                        <!-- Left and right controls -->
+
+                                      </div>
+                           </div>
+
+                                    <br/>
+                                    <br/>
+
+                                <div class="midwindows">
+                                    <div class="griddiv">
+                                        <div><img class="a" src="productphotographymagpiedesigns/IMG-9565 2.jpg"/></div>
+                                        <div><img class="b" src="productphotographymagpiedesigns/IMG-9582.jpg" width="283"/></div>
+                                        <div><img class="c" src="productphotographymagpiedesigns/IMG-9598.jpg" height="212" width="283"/></div>
+                                    </div>
+                                    <div class="griddiv2">
+                                        <div><img class="a" src="productphotographymagpiedesigns/IMG-9595.jpg" height="212" width="283"/></div>
+                                        <div><img class="b" src="productphotographymagpiedesigns/IMG-9567.JPG" height="212" width="283"/></div>
+
+                                    </div>
+                                 </div>
+
+                            <div id="waist">
+                                <div><img id="maglogo" src="productphotographymagpiedesigns/Asset 7.png" width="194"/></div>
+                                <p align="center" id="quote">Forever inspired by all things tribal and bohemian,<br>
+                                    each creation whether made by me or meticulously curated, <br>
+                                    is intended to be unique and to attract those with a <br>
+                                    love for adventure, wanderlust and individuality. <br>
+                                </p>
+                                <p align="center" id="quote"> A Journey of Love, Healing, and Awareness </p>
+                            </div>
+                  <footer>
+
+                  </footer>
+                                    <script>
+                                                let i = 0;
+                                                let images = [];
+                                                let time = 3000;
+
+                                                images[0] = "productphotographymagpiedesigns/IMG-9559.jpg";
+                                                images[1] = "productphotographymagpiedesigns/IMG-9565 2.jpg";
+                                                images[2] = "productphotographymagpiedesigns/IMG-9567.JPG";
+                                                images[3] = "productphotographymagpiedesigns/IMG-9582.jpg";
+
+
+                                                function changeImg() {
+                                                    document.slide.src = images[i];
+                                                    if(i < images.length - 1) {
+                                                        i++;
+                                                    } else {
+                                                        i = 0;
+                                                    }
+                                                    setTimeout("changeImg()",time);
+                                                }
+                                                window.onload = changeImg;
+                                    </script>
+            </body>
+
+
+</html>
